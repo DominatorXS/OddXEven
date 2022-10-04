@@ -1,4 +1,5 @@
 # Made by u/dumbrandomkid or Draco Silver or Dominator
+# Please report any bugs in issues!
 
 import random
 import time
@@ -43,7 +44,6 @@ def tossBatorBall():
         py_hasBatted = False
         print("You gotta throw some balls but in CLI.")
 
-# tossBatorBall()
 
 def game_playable():
     global totalPlayerScore
@@ -61,6 +61,7 @@ def game_playable():
     print()
     print(f"python has batted? " + str(py_hasBatted))
     print(f"player has batted? " + str(p_hasBatted))
+    print()
 
     if p_isBatting and p_hasBatted == False:
         if p_choosenNum.isdecimal() != True:
@@ -117,19 +118,29 @@ def game_playable():
 
 def over():
     # if p_hasBatted == True and py_hasBatted == True:
-        # print(" OVER !")
-        # print("##################################")
     if totalPlayerScore > totalPythonScore and py_hasBatted:
+        print(" OVER !")
+        print("##################################")
+        print()
         print(" You Won!")
         time.sleep(3)
         exit()
+
     if totalPlayerScore < totalPythonScore and p_hasBatted:
+        print(" OVER !")
+        print("##################################")
+        print()
         print(" Python Won! Better luck next time.")
         time.sleep(3)
         exit()
+
     if totalPlayerScore == totalPlayerScore and py_hasBatted and p_hasBatted:
+        print(" OVER !")
+        print("##################################")
+        print()
         print("Tie!!")
         time.sleep(3)
+        exit()
 
 
 # chooseDifficulty()
