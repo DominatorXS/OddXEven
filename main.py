@@ -1,4 +1,4 @@
-# Made by draco
+# Made by u/dumbrandomkid or Draco Silver or Dominator
 
 import random
 import time
@@ -73,6 +73,7 @@ def game_playable():
             print("Player Out!")
             print(f"Your score {totalPlayerScore}")
             p_hasBatted = True
+            choosenNum = 0
             if py_hasBatted == False:
                 p_isBatting = False
                 choosenNum = 0
@@ -97,15 +98,15 @@ def game_playable():
         if p_choosenNum == choosenNum and p_isBatting == False:
             # print("Python Out!")
             py_hasBatted == True
+            choosenNum = 0
             # print(f"Python score {totalPythonScore}")
             if p_hasBatted == False:
                 print("Python Out!")
                 py_hasBatted == True
                 print(f"Python score {totalPythonScore}")
                 p_isBatting = True
-                choosenNum = 0
-            # else:
-            #     over()
+            else:
+                over()
 
         elif p_choosenNum != choosenNum and p_choosenNum.isdecimal() and p_isBatting == False:
             totalPythonScore = float(choosenNum) + totalPythonScore
