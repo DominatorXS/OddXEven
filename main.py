@@ -1,4 +1,4 @@
-# Made by : u/dumbrandomkid or Draco Silver or Dominator
+# Made by draco
 
 import random
 import time
@@ -91,7 +91,7 @@ def game_playable():
         if p_choosenNum.isdecimal() != True:
             print("Baka! enter only numbers!")
 
-        if float(p_choosenNum) >= 6 or float(p_choosenNum) < 1:
+        if float(p_choosenNum) > 6 or float(p_choosenNum) < 1:
             print("Bruh idiot!!!. Don't choose too big or small......")
 
         if p_choosenNum == choosenNum and p_isBatting == False:
