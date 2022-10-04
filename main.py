@@ -1,5 +1,4 @@
 # Made by u/dumbrandomkid or Draco Silver or Dominator
-# Please report any bugs in issues!
 
 import random
 import time
@@ -14,18 +13,6 @@ p_hasBatted = False
 py_hasBatted = False
 totalPlayerScore = 0
 totalPythonScore = 0
-
-# Function to choose gamemode
-# def chooseDifficulty():
-#     print("Select Gamemode. 1 for playable, 2 for unplayable")
-#     choosenDifficulty = input()
-#     if choosenDifficulty == "1":
-#         difficulty = choosenDifficulty
-#         print("Difficulty set to playable")
-#     elif choosenDifficulty == "2":
-#         print("Sorry, It is not yet implemented!")
-#     else:
-#         print("Bruh wrong choice. I ain't idiot.")
 
 # Funcition to toss
 def tossBatorBall():
